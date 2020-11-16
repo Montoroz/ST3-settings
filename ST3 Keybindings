@@ -1,0 +1,11 @@
+[
+	{ "keys" : ["ctrl+alt+c"], "command": "cancel_build"},
+	{ "keys" : ["ctrl+alt+d"], "command": "toggle_menu"},
+	{ "keys" : ["ctrl+alt+s"], "command": "toggle_side_bar"},
+	{ "keys" : ["alt+f"], "command": "expand_selection", "args": {"to": "line"} },
+	{ "keys" : ["alt+i"], "command": "insert", "args": {"characters": "\\begin{figure}[H]\n\t\\begin{center}\n\t\\includegraphics[scale = 0.3]{fig}\n\\caption{}\n\\label{}\n\\end{center}\n\\end{figure}"} },
+	{ "keys": ["alt+d"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to Hard EOL.sublime-macro"} },
+
+
+
+]
