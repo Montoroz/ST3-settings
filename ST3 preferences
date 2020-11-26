@@ -10,14 +10,22 @@
 			"selector": "text.tex.latex"
 		}
 	],
-	"color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
+	"caret_extra_bootom": 2,
+	"caret_extra_top": 2,
+	"caret_extra_width": 3,
+	"bold_folder_labels": true,
+	"color_scheme": "Packages/Guna/themes/Guna.sublime-color-scheme",
 	"font_size": 14,
 	"gn_hide_tab_dropdown": true,
 	"gn_overlay_scroll_bars": true,
 	"gn_sidebar_box": true,
 	"gn_title_bar": true,
+	"gnc_h00": true,
+	"gnc_m07": true,
+	"gnc_w4m12": true,
 	"gnwidg1": true,
 	"gnwidgo": true,
+	"highlight_line": true,
 	"ignored_packages":
 	[
 		"Vintage"
