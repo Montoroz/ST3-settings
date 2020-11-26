@@ -1,0 +1,24 @@
+<snippet>
+	<content><![CDATA[
+import matplotlib.pyplot as plt
+from scipy.optimize import curve_fit
+import os
+
+ox = []
+oy = []
+
+with open('$1') as f:
+   data = f.readlines()
+   # print(data)
+
+for i in range(len(data)):
+   line = data[i].split(${2:sep=';'})
+   ox.append(float(line[0]))
+   oy.append(float(line[1]))
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>readfile</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+</snippet>

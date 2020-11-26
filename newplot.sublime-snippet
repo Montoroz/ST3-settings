@@ -1,0 +1,46 @@
+<snippet>
+	<content><![CDATA[
+
+fig, ax = plt.subplots(figsize=(12,10))
+ax.set_xlabel('$2', labelpad=5, fontsize=25)
+ax.set_ylabel('$3', labelpad=5, fontsize=25)
+ax.set_title('$1', pad=20, fontsize=35, loc='center')
+# ax.set_xlim(left=0, right=35)
+# ax.set_xlim(left=4, right=31)
+ax.tick_params(axis = 'both',    #  Применяем параметры к обеим осям
+               which = 'major',    #  Применяем параметры к основным делениям
+               direction = 'inout',    #  Рисуем деления внутри и снаружи графика
+               length = 15,    #  Длинна делений
+               width = 1.5,     #  Ширина делений
+               #color = 'm',    #  Цвет делений
+               pad = 10,    #  Расстояние между черточкой и ее подписью
+               labelsize = 20,    #  Размер подписи
+               #labelcolor = 'r',    #  Цвет подписи
+               bottom = True,    #  Рисуем метки снизу
+               #top = True,    #   сверху
+               left = True,    #  слева
+               #right = True,    #  и справа
+               labelbottom = True,    #  Рисуем подписи снизу
+               #labeltop = True,    #  сверху
+               labelleft = True,    #  слева
+               #labelright = True,    #  и справа
+               #labelrotation = 45)    #  Поворот подписей
+                )
+
+ax.grid()
+
+#строим данные 
+ax.plot(${4:ox}, ${5:oy}, color='${6:indigo}', linewidth=0,
+        marker='${7:.}' , markersize=10,
+        label = None)
+
+ax.legend(loc='best', prop={'size': 15})
+plt.savefig('$1.png',bbox_inches='tight')
+plt.show()
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>newplot</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+</snippet>
